@@ -7,7 +7,7 @@ public class calculadora {
 		Suma sumar = new Suma();
 		Resta restar = new Resta();
 		Multiplicacion multi = new Multiplicacion();
-		
+		Cociente division = new Cociente();
 		
 		
 		//pruebas
@@ -15,7 +15,7 @@ public class calculadora {
 		System.out.println(calcu.esFactorial(-3));
 		System.out.println(calcu.esPrimo(3));
 		
-		
+		System.out.println(division.DividirEnteros(5, 5));
 
 		
 		
