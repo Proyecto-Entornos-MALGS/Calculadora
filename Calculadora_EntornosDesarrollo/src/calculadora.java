@@ -11,9 +11,10 @@ public class calculadora {
 		
 		
 		//pruebas
-		System.out.println(calcu.esFactorial(3));
+		System.out.println(calcu.esFactorial(50));
 		System.out.println(calcu.esFactorial(-3));
 		System.out.println(calcu.esPrimo(3));
+		System.out.println(calcu.esPorcentaje(-500, -100));
 		
 		System.out.println(division.DividirEnteros(5, 5));
 

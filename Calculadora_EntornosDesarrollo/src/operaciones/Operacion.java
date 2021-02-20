@@ -1,4 +1,7 @@
 package operaciones;
+
+import java.math.BigInteger;
+
 /**
  * Clase dedicada a operaciones especiales
  * @author guiller
@@ -51,13 +54,14 @@ public class Operacion {
 	
 	/**
 	 * Metodo para hallar el factorial de cualquier numero.
-	 * <p>Si metemos el valor 0 nos devolvera su factorial que es 1.
-	 * <p>Si metemos un numero negativo, lo transformara en numero positivo.
+	 * <ul>
+	 * <li>Si metemos el valor 0 nos devolvera su factorial que es 1.
+	 * <li>Si metemos un numero negativo, lo transformara en numero positivo.
 	 * @param num = numero que queremos sacar el factorial.
 	 * @return El factorial del numero deseado.
 	 */
 	public String esFactorial(int num) {
-		int factorial = 1;
+		BigInteger factorial = new BigInteger("1");
 		int numero=num;
 		// el numero 0 al ser un producto nulo o vacio devolvera el valor 1.
 		if (num==0) 
@@ -67,8 +71,8 @@ public class Operacion {
 			if(num<0)                    
 				num*=-1;
 			while (num!=0) {
-			  factorial*=num;
-			  num--;
+			 factorial= factorial.multiply(new BigInteger(Integer.toString(num)));
+			 num--;
 			}
 		
 		}return "El factorial de " + numero +" es: "+ factorial;
