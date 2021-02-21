@@ -1,6 +1,7 @@
 package operaciones;
 
 import java.math.BigInteger;
+import java.util.Scanner;
 
 /**
  * Clase dedicada a operaciones especiales
@@ -33,12 +34,50 @@ public class Operacion {
 		
 	}
 	/**
-	 * Se implementara funcionalidad en futuras versiones.
-	 * @deprecated
+	 * Metodo que te da el n-esimo primo que le pidas.
+	 *
+	 * <ul>
+	 * <li>Introduciendo un valor igual o menor a 0, repite proceso hasta que le des un numero mayor
+	 * <li>Numero mayor o igual a 1, te devolvera el numero primo en la posicion indicada.
+	 * @param Posicion del numero primo que deseas.
+	 * @return El numero primo de la posicion que has introducido.
 	 */
-	public int iesimoPrimo(int num) {
+	public String iesimoPrimo(int primoRequerido) {
+		Scanner in = new Scanner(System.in);
 		
-		return num;
+		while (primoRequerido <= 1) {
+			if (primoRequerido == 1)  
+				return "El numero primo " + primoRequerido + "# es: 2";
+			System.out.println("ERROR: Dame el # primo requerido nuevamente");
+			primoRequerido = in.nextInt();
+		}
+		
+		int primos[] = new int[primoRequerido];
+		primos[0] = 2;
+		primos[1] = 3;
+		int probar = 3, actual = 2;
+
+		
+		
+		if (primoRequerido == 2) {
+		} else {
+
+			while (actual < primoRequerido) {
+				probar = probar + 2;
+				int contador = 0;
+
+				while (probar % primos[contador] > 0 && contador < actual
+						&& probar * 10 / primos[contador] > 9) {
+					if (contador + 1 == actual) {
+						primos[actual] = probar;
+						actual = (actual + 1);			
+					} else {
+					}
+					contador = (contador + 1);
+				}
+			}
+		}
+		return "El numero primo " + primoRequerido + "# es: " + primos[primoRequerido - 1];
 	}
 	
 	/**
