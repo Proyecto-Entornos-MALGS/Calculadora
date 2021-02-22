@@ -1,6 +1,6 @@
 package operaciones;
 /**
- * Clase dedicada a operaciones de sumar.
+ * Esta clase realiza operaciones de suma con dos o tres parámetros.
  * @author Luz
  * @version 1.0
  * @since jan2021
