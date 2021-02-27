@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import operaciones.Resta;
-import operaciones.Suma;
 
 class TestResta {
 
