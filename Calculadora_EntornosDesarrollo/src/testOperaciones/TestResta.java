@@ -38,9 +38,11 @@ class TestResta {
 
 	@Test
 	void testGetAcumulado() {
-		rest.acumulador(20.5);
-		rest.acumulador(10.8);
-		double esperado = 9.7;
+		double num1 = 20.5;
+		double num2 = 18.5;
+		rest.acumulador(num1);
+		rest.acumulador(num2);
+		double esperado = -39;
 		assertEquals(esperado, rest.getAcumulado());
 	}
 }
