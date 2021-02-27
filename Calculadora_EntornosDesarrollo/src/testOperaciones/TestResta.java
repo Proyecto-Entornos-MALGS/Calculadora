@@ -18,8 +18,12 @@ class TestResta {
 	}
 
 	@Test
-	void testSumaValoresEnteros() {
-		fail("Not yet implemented");	
+	void testResta2Enteros() {
+		Resta rest = new Resta();
+		int num1 = 3;
+		int num2 = 2;
+		int esperado = 1;
+		assertEquals(esperado, rest.resta2Enteros(num1, num2));	
 	
 	}
 
