@@ -39,12 +39,13 @@ public class Operacion {
 	 * <ul>
 	 * <li>Introduciendo un valor igual o menor a 0, repite proceso hasta que le des un numero mayor
 	 * <li>Numero mayor o igual a 1, te devolvera el numero primo en la posicion indicada.
-	 * @param Posicion del numero primo que deseas.
+	 * </ul>
+	 * <p>Los 10 primeros numeros primos son : 2 - 3 - 5 - 7 - 11 - 13 - 17 - 19 - 23 - 29
+	 * @param Posicion del numero primo que deseas, empezando por la posición 1.
 	 * @return El numero primo de la posicion que has introducido.
 	 */
 	public String iesimoPrimo(int primoRequerido) {
-		Scanner in = new Scanner(System.in);
-		
+		Scanner in = new Scanner(System.in);	
 		while (primoRequerido <= 1) {
 			if (primoRequerido == 1)  
 				return "El numero primo " + primoRequerido + "# es: 2";
