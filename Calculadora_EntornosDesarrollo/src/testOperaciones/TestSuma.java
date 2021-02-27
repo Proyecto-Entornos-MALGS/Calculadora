@@ -9,7 +9,7 @@ import operaciones.Suma;
 class TestSuma {
 
 	@Test
-	void esSumaValoresReales() {
+	void testSumaValoresReales() {
 		Suma sum = new Suma();
 		double num1 = 2.3;
 		double num2 = 7.7;
@@ -19,7 +19,7 @@ class TestSuma {
 	}
 
 	@Test
-	void esSumaValoresEnteros() {
+	void testSumaValoresEnteros() {
 		Suma sum = new Suma();
 		int num1 = 8;
 		int num2 = 9;
@@ -29,12 +29,17 @@ class TestSuma {
 	}
 
 	@Test
-	void esSumaMultiple() {
-		fail("Not yet implemented");
+	void testSumaMultiple() {
+		Suma sum = new Suma();
+		double num1 = 8.2;
+		double num2 = 9.3;
+		double num3 = 3.5;
+		double esperado = 21;
+		assertEquals(esperado, sum.esSumaMultiple(num1, num2, num3));
 	}
 
 	@Test
-	void esSumaAcumulador() {
+	void testSumaAcumulador() {
 		fail("Not yet implemented");
 	}
 
