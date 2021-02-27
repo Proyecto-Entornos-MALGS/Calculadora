@@ -39,12 +39,12 @@ class TestSuma {
 	}
 
 	@Test
-	void testSumaAcumulador() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void getAcumulador() {
-		fail("Not yet implemented");
+	void testGetAcumulador() {
+		int num1 = 1;
+		int num2 = 3;
+		sum.esSumaAcumulador(num1);
+		sum.esSumaAcumulador(num2);
+		int esperado = 4;
+		assertEquals(esperado, sum.getAcumulador());
 	}
 }
