@@ -7,19 +7,25 @@ import org.junit.jupiter.api.Test;
 import operaciones.Cociente;
 
 class TestCociente {
-
+	Cociente coci = new Cociente();
+	
+	
 	@Test
 	void testDividirReales() {
-		Cociente coci = new Cociente();
 		int num1 = 5;
 		int num2 = 2;
 		double esperado = 2.5;
-		assertEquals(esperado, coci.DividirReales(num1, num2));
+		double obtenido = coci.DividirReales(num1, num2);
+		assertEquals(esperado,obtenido, "La division entre 5 y 2 debe ser 2.5");
 	}
 
 	@Test
 	void testDividirEnteros() {
-		fail("Not yet implemented");
+		int x = 6;
+		int y = 3;
+		int esperado = 2;
+		int obtenido = coci.DividirEnteros(x, y);
+		assertEquals(esperado, obtenido, "la diviision entre 6 y 3 debe ser 2");
 	}
 
 	@Test
