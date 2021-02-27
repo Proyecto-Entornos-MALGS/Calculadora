@@ -7,10 +7,12 @@ import org.junit.jupiter.api.Test;
 import operaciones.Suma;
 
 class TestSuma {
-
+	
+	Suma sum = new Suma();
+	
 	@Test
 	void testSumaValoresReales() {
-		Suma sum = new Suma();
+		
 		double num1 = 2.3;
 		double num2 = 7.7;
 		double esperado = 10;
@@ -20,7 +22,6 @@ class TestSuma {
 
 	@Test
 	void testSumaValoresEnteros() {
-		Suma sum = new Suma();
 		int num1 = 8;
 		int num2 = 9;
 		double esperado = 17;
@@ -30,7 +31,6 @@ class TestSuma {
 
 	@Test
 	void testSumaMultiple() {
-		Suma sum = new Suma();
 		double num1 = 8.2;
 		double num2 = 9.3;
 		double num3 = 3.5;

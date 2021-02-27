@@ -8,9 +8,10 @@ import operaciones.Resta;
 
 class TestResta {
 
+	Resta rest = new Resta();
+
 	@Test
 	void testResta2Reales() {
-		Resta rest = new Resta();
 		double num1 = 3.3;
 		double num2 = 2.1;
 		double esperado = 1.2;
@@ -19,7 +20,6 @@ class TestResta {
 
 	@Test
 	void testResta2Enteros() {
-		Resta rest = new Resta();
 		int num1 = 3;
 		int num2 = 2;
 		int esperado = 1;
@@ -29,7 +29,6 @@ class TestResta {
 
 	@Test
 	void testResta3Reales() {
-		Resta rest = new Resta();
 		double num1 = 18.2;
 		double num2 = 12.3;
 		double num3 = 2.5;
