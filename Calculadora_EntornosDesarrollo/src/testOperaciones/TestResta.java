@@ -37,12 +37,10 @@ class TestResta {
 	}
 
 	@Test
-	void testAcumulador() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testAcumulado() {
-		fail("Not yet implemented");
+	void testGetAcumulado() {
+		rest.acumulador(20.5);
+		rest.acumulador(10.8);
+		double esperado = 9.7;
+		assertEquals(esperado, rest.getAcumulado());
 	}
 }
