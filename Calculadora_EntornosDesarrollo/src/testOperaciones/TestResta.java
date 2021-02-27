@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import operaciones.Resta;
+import operaciones.Suma;
 
 class TestResta {
 
@@ -28,17 +29,22 @@ class TestResta {
 	}
 
 	@Test
-	void testSumaMultiple() {
+	void testResta3Reales() {
+		Resta rest = new Resta();
+		double num1 = 18.2;
+		double num2 = 12.3;
+		double num3 = 2.5;
+		double esperado = 3.4;
+		assertEquals(esperado, rest.resta3Reales(num1, num2, num3));
+	}
+
+	@Test
+	void testAcumulador() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testSumaAcumulador() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void getAcumulador() {
+	void testAcumulado() {
 		fail("Not yet implemented");
 	}
 }
