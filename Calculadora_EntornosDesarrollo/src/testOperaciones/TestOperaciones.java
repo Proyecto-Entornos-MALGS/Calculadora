@@ -4,18 +4,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import operaciones.Resta;
+import operaciones.Operacion;
 
 class TestOperaciones {
 
-	Resta rest = new Resta();
+	Operacion opr = new Operacion();
 
 	@Test
-	void testResta2Reales() {
-		double num1 = 3.3;
-		double num2 = 2.1;
-		double esperado = 1.2;
-		assertEquals(esperado, rest.resta2Reales(num1, num2));
+	void testEsPrimo() {
+		int num1 = 3;
+		int num2 = 10;
+
+		assertTrue(opr.esPrimo(num1));
+		assertFalse(opr.esPrimo(num2));
 	}
 
 	@Test
