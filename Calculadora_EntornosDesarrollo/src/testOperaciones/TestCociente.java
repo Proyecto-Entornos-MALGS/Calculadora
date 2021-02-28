@@ -40,12 +40,26 @@ class TestCociente {
 	}
 	@Test
 	void testInverso() {
-		fail("Not yet implemented");
+		double x = 10;
+		double esperado = 0.1;
+		double obtenido = coci.Inverso(x);
+		assertEquals(esperado, obtenido);
+	}
+	void testInversoNegativo() {
+		double x = -10;
+		double esperado = -0.1;
+		double obtenido = coci.Inverso(x);
+		assertEquals(esperado, obtenido);
+		
 	}
 
 	@Test
 	void testRaiz() {
-		fail("Not yet implemented");
+		int x = 25 ;
+		int esperado = 5;
+		double obtenido = coci.Raiz(x);
+		assertEquals(esperado, obtenido);
+		
 	}
 
 }
