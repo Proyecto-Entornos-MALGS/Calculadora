@@ -38,10 +38,10 @@ class TestOperaciones {
 	}
 
 	@Test
-	void testGetAcumulado() {
-		rest.acumulador(20.5);
-		rest.acumulador(10.8);
-		double esperado = 9.7;
-		assertEquals(esperado, rest.getAcumulado());
+	void IesimoPrimo() {
+		int num1=5;
+		String output = opr.iesimoPrimo(num1);
+		assertEquals(output, "El numero primo " + num1 + "# es: 11");
+		
 	}
 }
