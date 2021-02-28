@@ -12,10 +12,10 @@ class TestCociente {
 	
 	@Test
 	void testDividirReales() {
-		int num1 = 5;
-		int num2 = 2;
+		int x = 5;
+		int y = 2;
 		double esperado = 2.5;
-		double obtenido = coci.DividirReales(num1, num2);
+		double obtenido = coci.DividirReales(x, y);
 		assertEquals(esperado,obtenido, "La division entre 5 y 2 debe ser 2.5");
 	}
 
@@ -28,6 +28,16 @@ class TestCociente {
 		assertEquals(esperado, obtenido, "la diviision entre 6 y 3 debe ser 2");
 	}
 
+	
+	@Test
+	void dividirEntre0esInfinito() {
+		double x = 5; 
+		double y = 0;
+		double esperado = (double) Double.POSITIVE_INFINITY;
+		double obtenido = coci.DividirReales(x, y);
+		assertEquals(esperado, obtenido);
+		
+	}
 	@Test
 	void testInverso() {
 		fail("Not yet implemented");
