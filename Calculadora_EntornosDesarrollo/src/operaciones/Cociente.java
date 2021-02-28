@@ -14,18 +14,20 @@ public class Cociente {
 	 * @param y = variable numerica real
 	 * @return nos devuelve la division entre las dos variable reales
 	 */
-	public double DividirReales(double x, double y) {
+	public double dividirReales(double x, double y) {
 		return x/y;
 	}
 	
 	
 	/**
 	 * Aunque este apartado pueda hacerlo con el anterior queria separar en numeros enteros y reales
+	 * Si divides un numero entre 0 el resultado siempre dara infinito, que en una calculadora es igual a error
+	 * Si divides cero entre un numero el resultado siempre sera 0
 	 * @param x = variable numerica entero
 	 * @param y = variable numerica entero
 	 * @return nos devuelve la division entre las dos variable enteras
 	 */
-	public int DividirEnteros(int x, int y) {
+	public int dividirEnteros(int x, int y) {
 		return x/y;
 	}
 	
@@ -34,7 +36,7 @@ public class Cociente {
 	 * @param x = variable numerica entero
 	 * @return nos devuelve el inverso del numero 
 	 */	
-	public int Inverso(int x) {
+	public double Inverso(int x) {
 		return 1/x;
 	}
 
