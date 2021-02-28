@@ -15,7 +15,7 @@ public class calculadora {
 		
 		System.out.println(calcu.iesimoPrimo(1));
 		
-		System.out.println(division.DividirReales(16.3, 2.65));
+		System.out.println(division.dividirReales(16.3, 2.65));
 		
 		
 		
