@@ -35,9 +35,9 @@ class TestCociente {
 		double y = 0;
 		double esperado = (double) Double.POSITIVE_INFINITY;
 		double obtenido = coci.DividirReales(x, y);
-		assertEquals(esperado, obtenido);
-		
+		assertEquals(esperado, obtenido);		
 	}
+	
 	@Test
 	void testInverso() {
 		double x = 10;
@@ -45,12 +45,13 @@ class TestCociente {
 		double obtenido = coci.Inverso(x);
 		assertEquals(esperado, obtenido);
 	}
+	
+	@Test
 	void testInversoNegativo() {
 		double x = -10;
 		double esperado = -0.1;
 		double obtenido = coci.Inverso(x);
-		assertEquals(esperado, obtenido);
-		
+		assertEquals(esperado, obtenido);		
 	}
 
 	@Test
@@ -58,8 +59,7 @@ class TestCociente {
 		int x = 25 ;
 		int esperado = 5;
 		double obtenido = coci.Raiz(x);
-		assertEquals(esperado, obtenido);
-		
+		assertEquals(esperado, obtenido);		
 	}
 
 }
