@@ -83,6 +83,11 @@ public class Operacion {
 	
 	/**
 	 * Metodo que sirve para saber el porcentaje de una cantidad sobre un total.
+	 * Un par de ejemplos
+	 * <ul>
+	 * <li>Total: 100     Num: 10   Return: 10.0%
+	 * <li>Total: 100     Num: 50   Return: 50.0%
+	 * </ul>
 	 * @param num = cantidad que quieres hallar el porcentaje
 	 * @param total = cantidad total sobre la que hallar el porcentaje
 	 * @return Devuelve el %
