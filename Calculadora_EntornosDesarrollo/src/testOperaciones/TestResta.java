@@ -12,9 +12,9 @@ class TestResta {
 
 	@Test
 	void testResta2Reales() {
-		double num1 = 3.3;
-		double num2 = 2.1;
-		double esperado = 1.2;
+		double num1 = 3.0;
+		double num2 = 2.0;
+		double esperado = 1.0;
 		assertEquals(esperado, rest.resta2Reales(num1, num2));
 	}
 
@@ -29,10 +29,10 @@ class TestResta {
 
 	@Test
 	void testResta3Reales() {
-		double num1 = 18.2;
-		double num2 = 12.3;
-		double num3 = 2.5;
-		double esperado = 3.4;
+		double num1 = 18.0;
+		double num2 = 12.0;
+		double num3 = 2.0;
+		double esperado = 4.0;
 		assertEquals(esperado, rest.resta3Reales(num1, num2, num3));
 	}
 
