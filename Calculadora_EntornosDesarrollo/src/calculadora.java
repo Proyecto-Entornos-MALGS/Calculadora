@@ -26,6 +26,14 @@ public class calculadora {
 		System.out.println(division.dividirEnteros(27, 3));
 		System.out.println(division.Inverso(45));
 		System.out.println(division.Raiz(125));
+		System.out.println("---PRUEBAS SUMA---");
+		System.out.println(sumar.esSumaValoresReales(1.3, 1.6));
+		System.out.println(sumar.esSumaValoresEnteros(10, 20));
+		System.out.println(sumar.esSumaMultiple(1.3, 4.5, 5.7));
+		sumar.esSumaAcumulador(10);
+		sumar.esSumaAcumulador(15);
+		System.out.println(sumar.getAcumulador());
+		
 		
 		
 		

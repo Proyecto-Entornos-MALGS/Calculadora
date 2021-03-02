@@ -32,6 +32,8 @@ public class Suma {
 	}
 	/**
 	 * Se introducen tres parametros que realizaran la operación de suma.
+	 * Por la falta de precisión de JAVA, el valor del resultado de la operación no es el exacto.
+	 * Contemplamos utilizar en próximas versiones BigDecimal.
 	 * @param num1 = numero real 1
 	 * @param num2 = numero real 2
 	 * @param num3 = numero real 3
