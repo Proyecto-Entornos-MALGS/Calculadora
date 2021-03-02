@@ -39,7 +39,7 @@ public class Suma {
 	 */
 	public double esSumaMultiple(double num1, double num2,double num3) {
 		
-		return num1+num2;
+		return num1+num2+num3;
 	}
 	/**
 	 * Se introduce un parametro que se acumula.
