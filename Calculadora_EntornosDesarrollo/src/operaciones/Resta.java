@@ -13,6 +13,9 @@ public class Resta {
 
 
 	/**
+	 * Por un problema de precision de Java, el resultado no siempre es exacto
+	 * y se obtiene un error. En proximas verisones para solventar este problema
+	 * se creara como clase BigDecimal.
 	 * metodo que contiene la resta de dos reales
 	 * @param x variable de entrada, primer elemento en la operacion
 	 * @param y variable de entrada, segundo elemento en la operacion
@@ -33,6 +36,9 @@ public class Resta {
 	}	
 
 	/**
+	 * 	 * Por un problema de precision de Java, el resultado no siempre es exacto
+	 * y se obtiene un error. En proximas verisones para solventar este problema
+	 * se creara como clase BigDecimal.
 	 * metodo que contiene la resta de tres reales
 	 * @param x variable de entrada, primer elemento en la operacion
 	 * @param y variable de entrada, segundo elemento en la operacion

@@ -33,6 +33,17 @@ public class calculadora {
 		sumar.esSumaAcumulador(10);
 		sumar.esSumaAcumulador(15);
 		System.out.println(sumar.getAcumulador());
+		System.out.println("---PRUEBAS RESTA---");
+		System.out.println(restar.resta2Reales(1.5, 2.5));
+		System.out.println(restar.resta2Enteros(2,3));
+		System.out.println(restar.resta3Reales(1.5, 2.5,3.5));
+		restar.acumulador(7);
+		restar.acumulador(17);
+		System.out.println(restar.getAcumulado());
+		
+		
+		
+		
 		
 		
 		
