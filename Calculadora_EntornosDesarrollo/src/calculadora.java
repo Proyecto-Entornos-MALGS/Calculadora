@@ -11,18 +11,16 @@ public class calculadora {
 		
 		
 		//pruebas
-		
-		
-		System.out.println(calcu.iesimoPrimo(1));
-		
-		System.out.println(division.dividirReales(16.3, 2.65));
-		
+		System.out.println("---PRUEBAS MULTIPLICACION---");
 		System.out.println(multi.twoRealNumbersProduct(16.2, 2.5));
 		System.out.println(multi.twoIntegerNumersProduct(16, 2));
 		System.out.println(multi.threeRealNumbersProduct(16.2F, 2.6F, 2.1F));
 		System.out.println(multi.exponent(16, 2));
-
-		
+		System.out.println("---PRUEBAS OPERACIONES ESPECIALES---");
+		System.out.println(calcu.esFactorial(20));
+		System.out.println(calcu.esPorcentaje(25, 100));
+		System.out.println(calcu.esPrimo(3));
+		System.out.println(calcu.iesimoPrimo(20));
 		
 		
 		
