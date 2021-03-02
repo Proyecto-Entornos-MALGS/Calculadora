@@ -21,7 +21,11 @@ public class calculadora {
 		System.out.println(calcu.esPorcentaje(25, 100));
 		System.out.println(calcu.esPrimo(3));
 		System.out.println(calcu.iesimoPrimo(20));
-		
+		System.out.println("---PRUEBAS COCIENTE---");
+		System.out.println(division.dividirReales(10.5, 2.37));
+		System.out.println(division.dividirEnteros(27, 3));
+		System.out.println(division.Inverso(45));
+		System.out.println(division.Raiz(125));
 		
 		
 		

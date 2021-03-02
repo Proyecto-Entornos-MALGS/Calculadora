@@ -33,6 +33,7 @@ public class Cociente {
 	
 	
 	/**
+	 * Es el recíproco de un número distinto de cero. Tiene la propiedad de que al multiplicarlo por el número el resultado es la unidad.
 	 * @param x = variable numerica entero
 	 * @return nos devuelve el inverso del numero 
 	 */	
