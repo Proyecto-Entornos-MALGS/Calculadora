@@ -1,5 +1,4 @@
 package operaciones;
-
 /**
  * 
  * Clase dedicada a operaciones de producto.
@@ -23,8 +22,8 @@ public class Multiplicacion {
 	 * @param coefficientTwo Numero real. Segundo factor de la multiplicacion
 	 * @return  Numero real. Resultado de la operacion de multiplicacion
 	 */
-	public float twoRealNumbersProduct(float coefficientOne, float coefficientTwo) {
-		float result = coefficientOne * coefficientTwo;
+	public double twoRealNumbersProduct(double coefficientOne, double coefficientTwo) {
+		double result = coefficientOne * coefficientTwo;
 		return result;
 	} // Cierre del metodo
 	
@@ -73,8 +72,8 @@ public class Multiplicacion {
 	 * @param exponent Exponente de la potencia
 	 * @return Resultado de la operacionn base elevado a exponente
 	 */
-	public double exponent(float base, float exponent) {
-		double result =  Math.pow(base, exponent);
+	public float exponent(float base, float exponent) {
+		float result =  (float) Math.pow(base, exponent);
 		return result;
 	} // Cierre del metodo
 	
