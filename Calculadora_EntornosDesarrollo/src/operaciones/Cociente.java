@@ -43,6 +43,7 @@ public class Cociente {
 
 	
 	/**
+	 * hola
 	 * Math.sqrt es un metodo para hacer una raiz cuadrada
 	 * @param x = variable numerica entero
 	 * @return nos devuelve la raiz cuadrada del numero 
